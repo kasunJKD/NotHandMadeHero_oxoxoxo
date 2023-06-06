@@ -112,7 +112,7 @@ Win32InitDSount(HWND Window, int32 SamplesPerSecond, int32 BufferSize)
                 {                                    
                    if(SUCCEEDED(PrimaryBuffer->SetFormat(&WaveFormat)))
                    {
-                        OutputDebugStringA("Primary buffer format was set.\n")
+                        OutputDebugStringA("Primary buffer format was set.\n");
                    }
                    else
                    {
