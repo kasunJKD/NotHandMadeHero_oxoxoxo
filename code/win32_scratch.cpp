@@ -108,7 +108,7 @@ Win32InitDSount(HWND Window, int32 SamplesPerSecond, int32 BufferSize)
                 BufferDescription.dwFlags = DSBCAPS_PRIMARYBUFFER;
                 
                  // create a primary buffer               
-                LPDIRECTSOUNDBUFFER PrimaryBuffer;
+                IDirectSoundBuffer *PrimaryBuffer;
                 if(SUCCEEDED(DirectSound->CreateSoundBuffer(&BufferDescription, &PrimaryBuffer, 0)))
                 {                                    
                    if(SUCCEEDED(PrimaryBuffer->SetFormat(&WaveFormat)))
